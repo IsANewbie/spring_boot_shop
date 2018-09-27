@@ -305,63 +305,13 @@ public class NewsExample {
             return (Criteria) this;
         }
 
-        public Criteria andIsDeletedIsNull() {
-            addCriterion("is_deleted is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andIsDeletedIsNotNull() {
-            addCriterion("is_deleted is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andIsDeletedEqualTo(Byte value) {
+        public Criteria andDeletedEqualTo(Boolean value) {
             addCriterion("is_deleted =", value, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsDeletedNotEqualTo(Byte value) {
+        public Criteria andDeletedNotEqualTo(Boolean value) {
             addCriterion("is_deleted <>", value, "deleted");
-            return (Criteria) this;
-        }
-
-        public Criteria andIsDeletedGreaterThan(Byte value) {
-            addCriterion("is_deleted >", value, "deleted");
-            return (Criteria) this;
-        }
-
-        public Criteria andIsDeletedGreaterThanOrEqualTo(Byte value) {
-            addCriterion("is_deleted >=", value, "deleted");
-            return (Criteria) this;
-        }
-
-        public Criteria andIsDeletedLessThan(Byte value) {
-            addCriterion("is_deleted <", value, "deleted");
-            return (Criteria) this;
-        }
-
-        public Criteria andIsDeletedLessThanOrEqualTo(Byte value) {
-            addCriterion("is_deleted <=", value, "deleted");
-            return (Criteria) this;
-        }
-
-        public Criteria andIsDeletedIn(List<Byte> values) {
-            addCriterion("is_deleted in", values, "deleted");
-            return (Criteria) this;
-        }
-
-        public Criteria andIsDeletedNotIn(List<Byte> values) {
-            addCriterion("is_deleted not in", values, "deleted");
-            return (Criteria) this;
-        }
-
-        public Criteria andIsDeletedBetween(Byte value1, Byte value2) {
-            addCriterion("is_deleted between", value1, value2, "deleted");
-            return (Criteria) this;
-        }
-
-        public Criteria andIsDeletedNotBetween(Byte value1, Byte value2) {
-            addCriterion("is_deleted not between", value1, value2, "deleted");
             return (Criteria) this;
         }
 
