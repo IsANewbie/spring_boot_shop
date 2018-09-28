@@ -29,21 +29,28 @@ public interface OrderService {
     /**
      * 订单分页-根据分页信息
      *
+     * @param pageNum     多少页
      * @param pageSize 单页数量
-     * @param page     多少页
      * @return 返回订单列表
      */
-    PageInfo<Order> findAllOrders(int pageSize, int page);
+    PageInfo<Order> findAllOrders(int pageNum, int pageSize);
 
     /**
      * 根据用户id查询所属用户的订单
      *
+     * @param pageNum     多少页
      * @param pageSize 单页数量
-     * @param page     多少页
      * @param userId   用户id
      * @return 返回订单列表
      */
-    PageInfo<Order> findAllOrders(int pageSize, int page, Long userId);
+    PageInfo<Order> findAllOrders(int pageNum, int pageSize, Long userId);
+
+    /**
+     *  根据订单id查询出关联的订单项
+     * @param orderId 订单id
+     * @return 订单项
+     */
+    List<OrderItem> findAllOrderItems(Long orderId);
 
     /**
      * 根据id删除订单及订单关联信息

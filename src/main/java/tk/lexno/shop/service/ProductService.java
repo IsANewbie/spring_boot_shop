@@ -32,10 +32,10 @@ public interface ProductService {
     /**
      * 分页查询所有商品
      *
+     * @param pageNum     多少页
      * @param pageSize 当前页面数量
-     * @param page     多少页
      * @return 商品列表
      */
-    PageInfo<Product> findAllProducts(int pageSize, int page);
+    PageInfo<Product> findAllProducts(int pageNum, int pageSize);
 
 }

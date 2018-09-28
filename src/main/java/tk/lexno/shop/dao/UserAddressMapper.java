@@ -1,9 +1,12 @@
 package tk.lexno.shop.dao;
 
 import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
 import tk.lexno.shop.entity.UserAddress;
 import tk.lexno.shop.entity.UserAddressExample;
 
+@Mapper
 public interface UserAddressMapper {
     int deleteByPrimaryKey(Long id);
 

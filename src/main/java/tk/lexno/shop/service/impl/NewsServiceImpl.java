@@ -31,8 +31,8 @@ public class NewsServiceImpl implements NewsService {
     }
 
     @Override
-    public PageInfo<News> findNews(int pageSize, int page) {
-        PageHelper.startPage(page, pageSize);
+    public PageInfo<News> findNews(int pageNum, int pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
         NewsExample example = new NewsExample();
         NewsExample.Criteria criteria = example.createCriteria();
         criteria.andDeletedEqualTo(Boolean.FALSE);

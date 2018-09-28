@@ -21,11 +21,11 @@ public interface NewsService {
     /**
      * 查询新闻-分页
      *
+     * @param pageNum  多少页
      * @param pageSize 单页数量
-     * @param page     多少页
      * @return 返回新闻列表
      */
-    PageInfo<News> findNews(int pageSize, int page);
+    PageInfo<News> findNews(int pageNum, int pageSize);
 
     /**
      * 根据id查询新闻

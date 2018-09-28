@@ -1,9 +1,12 @@
 package tk.lexno.shop.dao;
 
 import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
 import tk.lexno.shop.entity.OrderItem;
 import tk.lexno.shop.entity.OrderItemExample;
 
+@Mapper
 public interface OrderItemMapper {
     int deleteByPrimaryKey(Long id);
 

@@ -1,9 +1,12 @@
 package tk.lexno.shop.dao;
 
 import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
 import tk.lexno.shop.entity.Admin;
 import tk.lexno.shop.entity.AdminExample;
 
+@Mapper
 public interface AdminMapper {
     int deleteByPrimaryKey(Long id);
 
